@@ -1,8 +1,15 @@
+import { db } from "@/db";
 import React from "react";
- 
-const Page = () => {
+
+const Page = async () => {
+  
   return (
-      <div>Index page</div>
+    <>
+      <ul>
+        <li>Hello world</li>
+      </ul>
+      
+    </>
   );
 };
 
