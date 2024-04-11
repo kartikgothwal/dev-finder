@@ -7,13 +7,13 @@ import GithubProvider from "next-auth/providers/github"
 const handler = NextAuth({
     adapter: DrizzleAdapter(db) as Adapter,
     providers: [
-        // GoogleProvider({
-        //   clientId: process.env.GOOGLE_CLIENT_ID!,
-        //   clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-        // }),
+        GoogleProvider({
+          clientId: process.env.GOOGLE_PROVIDER_CLIENT_ID!,
+          clientSecret: process.env.GOOGLE_PROVIDER_CLIENT_PASSWORD!,
+        }),
         GithubProvider({
-          clientId: "448da6e145159ecde5c2",
-          clientSecret: "652567214c8562632b5c89cefa600cb214970958",
+          clientId: process.env.GITHUB_PROVIDER_CLIENT_ID!,
+          clientSecret: process.env.GITHUB_PROVIDER_CLIENT_PASSWORD!,
         }),
       ],
 })
