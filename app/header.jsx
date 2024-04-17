@@ -11,9 +11,9 @@ const Header = () => {
     <div>
       <ModeToggle />
       {session.data ? (
-        <Button onClick={() => signOut("github")}>Sign out</Button>
+        <Button onClick={() => signOut()}>Sign out</Button>
       ) : (
-        <Button onClick={() => signIn("github")}>Sign In</Button>
+        <Button onClick={() => signIn()}>Sign In</Button>
       )}
     </div>
   );
