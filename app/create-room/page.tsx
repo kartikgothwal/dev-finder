@@ -1,12 +1,13 @@
-import React from 'react'
+import React from "react";
+import CreateRoomForm from "./create-room-form";
 
 const CreateRoom = () => {
   return (
     <div>
-      <h1>Create a rooom
-      </h1>
+      
+       <CreateRoomForm />
     </div>
-  )
-}
+  );
+};
 
-export default CreateRoom
+export default CreateRoom;
